@@ -1,0 +1,109 @@
+name: train
+run_id: install_deps
+env HOME: /home/ubuntu
+env LANG: C.UTF-8
+env TERM: xterm-256color
+env PATH: /home/ubuntu/t5-empaquetamiento/package-src/.tox/test_package/bin:/usr/bin:/bin::/home/ubuntu/.local/bin
+env PIP_DISABLE_PIP_VERSION_CHECK: 1
+env PYTHONIOENCODING: utf-8
+env PYTHONPATH: .
+env PYTHONHASHSEED: 0
+env TOX_ENV_NAME: train
+env TOX_WORK_DIR: /home/ubuntu/t5-empaquetamiento/package-src/.tox
+env TOX_ENV_DIR: /home/ubuntu/t5-empaquetamiento/package-src/.tox/test_package
+env VIRTUAL_ENV: /home/ubuntu/t5-empaquetamiento/package-src/.tox/test_package
+env COLUMNS: 154
+env LINES: 43
+metadata pid: 3453
+cwd: /home/ubuntu/t5-empaquetamiento/package-src
+allow: /home/ubuntu/t5-empaquetamiento/package-src/.tox/test_package/bin/*:train
+cmd: pip install -r /home/ubuntu/t5-empaquetamiento/package-src/requirements/test_requirements.txt
+exit_code: 0
+Collecting numpy==2.4.6 (from -r /home/ubuntu/t5-empaquetamiento/package-src/requirements/requirements.txt (line 4))
+  Downloading numpy-2.4.6-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting pandas<3.0.0,>=2.2.3 (from -r /home/ubuntu/t5-empaquetamiento/package-src/requirements/requirements.txt (line 5))
+  Downloading pandas-2.3.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (91 kB)
+[?25l     [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/91.2 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m91.2/91.2 kB[0m [31m3.9 MB/s[0m eta [36m0:00:00[0m
+[?25hCollecting scikit-learn<1.10.0,>=1.9.0 (from -r /home/ubuntu/t5-empaquetamiento/package-src/requirements/requirements.txt (line 6))
+  Downloading scikit_learn-1.9.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (11 kB)
+Collecting joblib<2.0.0,>=1.5.3 (from -r /home/ubuntu/t5-empaquetamiento/package-src/requirements/requirements.txt (line 7))
+  Downloading joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting pydantic<2.0.0,>=1.10.0 (from -r /home/ubuntu/t5-empaquetamiento/package-src/requirements/requirements.txt (line 8))
+  Downloading pydantic-1.10.26-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (155 kB)
+[?25l     [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/155.1 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m155.1/155.1 kB[0m [31m11.2 MB/s[0m eta [36m0:00:00[0m
+[?25hCollecting strictyaml<2.0.0,>=1.7.0 (from -r /home/ubuntu/t5-empaquetamiento/package-src/requirements/requirements.txt (line 9))
+  Downloading strictyaml-1.7.3-py3-none-any.whl.metadata (11 kB)
+Collecting feature-engine<2.0.0,>=1.8.3 (from -r /home/ubuntu/t5-empaquetamiento/package-src/requirements/requirements.txt (line 10))
+  Downloading feature_engine-1.9.4-py3-none-any.whl.metadata (10 kB)
+Collecting pytest<10.0.0,>=9.1.1 (from -r /home/ubuntu/t5-empaquetamiento/package-src/requirements/test_requirements.txt (line 4))
+  Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting python-dateutil>=2.8.2 (from pandas<3.0.0,>=2.2.3->-r /home/ubuntu/t5-empaquetamiento/package-src/requirements/requirements.txt (line 5))
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas<3.0.0,>=2.2.3->-r /home/ubuntu/t5-empaquetamiento/package-src/requirements/requirements.txt (line 5))
+  Downloading pytz-2026.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas<3.0.0,>=2.2.3->-r /home/ubuntu/t5-empaquetamiento/package-src/requirements/requirements.txt (line 5))
+  Downloading tzdata-2026.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting scipy>=1.10.0 (from scikit-learn<1.10.0,>=1.9.0->-r /home/ubuntu/t5-empaquetamiento/package-src/requirements/requirements.txt (line 6))
+  Downloading scipy-1.18.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+[?25l     [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/62.3 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m62.3/62.3 kB[0m [31m4.9 MB/s[0m eta [36m0:00:00[0m
+[?25hCollecting narwhals>=2.0.1 (from scikit-learn<1.10.0,>=1.9.0->-r /home/ubuntu/t5-empaquetamiento/package-src/requirements/requirements.txt (line 6))
+  Downloading narwhals-2.23.0-py3-none-any.whl.metadata (15 kB)
+Collecting threadpoolctl>=3.5.0 (from scikit-learn<1.10.0,>=1.9.0->-r /home/ubuntu/t5-empaquetamiento/package-src/requirements/requirements.txt (line 6))
+  Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Collecting typing-extensions>=4.2.0 (from pydantic<2.0.0,>=1.10.0->-r /home/ubuntu/t5-empaquetamiento/package-src/requirements/requirements.txt (line 8))
+  Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting statsmodels>=0.11.1 (from feature-engine<2.0.0,>=1.8.3->-r /home/ubuntu/t5-empaquetamiento/package-src/requirements/requirements.txt (line 10))
+  Downloading statsmodels-0.14.6-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (9.5 kB)
+Collecting iniconfig>=1.0.1 (from pytest<10.0.0,>=9.1.1->-r /home/ubuntu/t5-empaquetamiento/package-src/requirements/test_requirements.txt (line 4))
+  Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting packaging>=22 (from pytest<10.0.0,>=9.1.1->-r /home/ubuntu/t5-empaquetamiento/package-src/requirements/test_requirements.txt (line 4))
+  Using cached packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting pluggy<2,>=1.5 (from pytest<10.0.0,>=9.1.1->-r /home/ubuntu/t5-empaquetamiento/package-src/requirements/test_requirements.txt (line 4))
+  Using cached pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting pygments>=2.7.2 (from pytest<10.0.0,>=9.1.1->-r /home/ubuntu/t5-empaquetamiento/package-src/requirements/test_requirements.txt (line 4))
+  Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas<3.0.0,>=2.2.3->-r /home/ubuntu/t5-empaquetamiento/package-src/requirements/requirements.txt (line 5))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting patsy>=0.5.6 (from statsmodels>=0.11.1->feature-engine<2.0.0,>=1.8.3->-r /home/ubuntu/t5-empaquetamiento/package-src/requirements/requirements.txt (line 10))
+  Downloading patsy-1.0.2-py2.py3-none-any.whl.metadata (3.6 kB)
+Downloading numpy-2.4.6-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/16.6 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;197m━━━━━━━━━━━━━[0m[38;5;197m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m5.7/16.6 MB[0m [31m171.6 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━[0m [32m12.7/16.6 MB[0m [31m198.7 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;197m╸[0m [32m16.6/16.6 MB[0m [31m202.2 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m16.6/16.6 MB[0m [31m106.7 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading pandas-2.3.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.4 MB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/12.4 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━[0m [32m6.6/12.4 MB[0m [31m198.3 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;197m╸[0m [32m12.4/12.4 MB[0m [31m185.1 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m12.4/12.4 MB[0m [31m113.1 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading scikit_learn-1.9.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (9.1 MB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/9.1 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;197m╸[0m[38;5;237m━━━━━━━━━━━[0m [32m6.6/9.1 MB[0m [31m198.7 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;197m╸[0m [32m9.1/9.1 MB[0m [31m192.6 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m9.1/9.1 MB[0m [31m126.0 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading joblib-1.5.3-py3-none-any.whl (309 kB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/309.1 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m309.1/309.1 kB[0m [31m43.1 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading pydantic-1.10.26-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.6 MB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/2.6 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;197m╸[0m [32m2.6/2.6 MB[0m [31m113.4 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.6/2.6 MB[0m [31m75.1 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading strictyaml-1.7.3-py3-none-any.whl (123 kB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/123.9 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m123.9/123.9 kB[0m [31m19.1 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading feature_engine-1.9.4-py3-none-any.whl (243 kB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/243.5 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m243.5/243.5 kB[0m [31m36.3 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading pytest-9.1.1-py3-none-any.whl (386 kB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/386.5 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m386.5/386.5 kB[0m [31m49.6 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+Downloading narwhals-2.23.0-py3-none-any.whl (458 kB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/458.9 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m458.9/458.9 kB[0m [31m54.0 MB/s[0m eta [36m0:00:00[0m
+[?25hUsing cached packaging-26.2-py3-none-any.whl (100 kB)
+Using cached pluggy-1.6.0-py3-none-any.whl (20 kB)
+Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.2 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.2/1.2 MB[0m [31m84.2 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/229.9 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m229.9/229.9 kB[0m [31m35.3 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading pytz-2026.2-py2.py3-none-any.whl (510 kB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/510.1 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m510.1/510.1 kB[0m [31m58.0 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading scipy-1.18.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/35.3 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;197m━━━━━━━[0m[38;5;197m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m6.7/35.3 MB[0m [31m201.0 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━[0m[38;5;197m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m13.9/35.3 MB[0m [31m200.1 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━[0m [32m21.5/35.3 MB[0m [31m213.4 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;197m╸[0m[38;5;237m━━━━━━━[0m [32m29.1/35.3 MB[0m [31m218.9 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;197m╸[0m [32m35.3/35.3 MB[0m [31m209.7 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;197m╸[0m [32m35.3/35.3 MB[0m [31m209.7 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;197m╸[0m [32m35.3/35.3 MB[0m [31m209.7 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m35.3/35.3 MB[0m [31m75.4 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading statsmodels-0.14.6-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (10.3 MB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/10.3 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━[0m [32m6.3/10.3 MB[0m [31m187.0 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;197m╸[0m [32m10.3/10.3 MB[0m [31m193.2 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m10.3/10.3 MB[0m [31m130.4 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/44.6 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m44.6/44.6 kB[0m [31m6.4 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading tzdata-2026.2-py2.py3-none-any.whl (349 kB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/349.3 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m349.3/349.3 kB[0m [31m26.6 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading patsy-1.0.2-py2.py3-none-any.whl (233 kB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/233.3 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m233.3/233.3 kB[0m [31m31.8 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: pytz, tzdata, typing-extensions, threadpoolctl, six, pygments, pluggy, packaging, numpy, narwhals, joblib, iniconfig, scipy, python-dateutil, pytest, pydantic, patsy, strictyaml, scikit-learn, pandas, statsmodels, feature-engine
+Successfully installed feature-engine-1.9.4 iniconfig-2.3.0 joblib-1.5.3 narwhals-2.23.0 numpy-2.4.6 packaging-26.2 pandas-2.3.3 patsy-1.0.2 pluggy-1.6.0 pydantic-1.10.26 pygments-2.20.0 pytest-9.1.1 python-dateutil-2.9.0.post0 pytz-2026.2 scikit-learn-1.9.0 scipy-1.18.0 six-1.17.0 statsmodels-0.14.6 strictyaml-1.7.3 threadpoolctl-3.6.0 typing-extensions-4.15.0 tzdata-2026.2
